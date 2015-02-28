@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <h3>Cities</h3>
+    <%= paginate @cities %>
     <p><%= link_to 'Add City', new_city_path %></p>
     <div class="column">
       <table class="table">
