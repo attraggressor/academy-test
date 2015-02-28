@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <h3>Cities</h3>
+    <p><%= link_to 'Add City', new_city_path %></p>
+    <div class="column">
+      <table class="table">
+        <tbody>
+        <td>Name</td>
+        <td>Short name</td>
+          <% @cities.each do |city| %>
+            <tr>
+              <%= render city %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
