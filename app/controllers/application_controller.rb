@@ -11,5 +11,4 @@ protected
     devise_parameter_sanitizer.for(:account_update) << :age << :name
   end
 
-
 end
